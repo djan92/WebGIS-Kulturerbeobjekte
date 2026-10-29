@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WebGIS Kulturerbe</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ol@10.3.1/ol.css">
+  <link rel="stylesheet" href="style.css?v=8">
+</head>
+<body>
+  <header>
+    <img src="img/icon.png" alt="Logo" id="logo" onerror="this.style.display='none'">
+    <h1>WebGIS Kulturerbe</h1>
+  </header>
+  <main>
+    <aside id="sidebar">
+      <h2>Ebenen</h2>
+      <div id="layerlist"></div>
+      <div id="status"></div>
+    </aside>
+    <div id="map"></div>
+    <div id="info" hidden></div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/ol@10.3.1/dist/ol.js"></script>
+  <script src="https://unpkg.com/flatgeobuf@3.36.0/dist/flatgeobuf-geojson.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/proj4@2.12.1/dist/proj4.js"></script>
+  <script src="form.js?v=8"></script>
+  <script src="app.js?v=8"></script>
+  <script src="mapping.js?v=8"></script>
+</body>
+</html>
